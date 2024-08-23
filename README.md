@@ -1,3 +1,4 @@
+
 # Alfresco Utility Scripts
 
 This repository contains a collection of scripts designed to interact with the Alfresco content management system. These scripts automate various tasks, including metadata extraction, content searches, bulk downloads, and more. Each script is implemented using Alfresco's REST API and can export results to formats such as CSV or JSON.
@@ -16,16 +17,13 @@ Performs searches for documents in the Alfresco repository using queries based o
 
 ### 3. Bulk Download Script
 
-**Purpose:**  
+**Function:**  
 Download multiple documents or entire folders from Alfresco to a local directory.
 
 **Implementation:**
 - Use the Alfresco REST API to list documents within a folder.
 - Retrieve the content for each document and save it to a local directory, preserving the folder structure.
 - Optionally, include error handling to retry or skip failed downloads.
-
-**Use Case:**  
-Facilitates the backup of content, enabling the creation of a local copy of important documents or migration to another system.
 
 ### 4. Document Version History Extraction Script
 
@@ -79,16 +77,13 @@ Creates a map showing dependencies between documents in Alfresco, illustrating r
 
 ### 14. Scheduled Report Generation Script
 
-**Purpose:**  
-Automate the generation of specific reports (e.g., metadata, user activity) at regular intervals.
+**Function:**  
+Automates the generation of specific reports (e.g., metadata, user activity) at regular intervals.
 
 **Implementation:**
 - Schedule the script to run periodically using a cron job or another scheduler.
 - Execute predefined report generation scripts (e.g., metadata extraction, user activity).
 - Save the generated reports to a specified location or send them via email.
-
-**Use Case:**  
-Useful for periodic monitoring and reporting without manual intervention, ensuring that stakeholders receive up-to-date information regularly.
 
 ### 15. Content Health Check Script
 
